@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: rgb(13, 7, 20);
+}
+
+.todoContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.todoContainer ul {
+  margin-bottom: 50px;
+}
+
+.todoAddWrap {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todoAddWrap input {
+  width: 447px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #9e78cf;
+  color: #9e78cf;
+  background: rgb(13, 7, 20);
+}
+
+.todoAddWrap .taskAdd {
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 25px;
+  color: #fff;
+  background: #9e78cf;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.taskAdd:hover {
+  background: #3e1671;
+}
+
+.tasks {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.todoItem {
+  display: flex;
+  padding: 10px 30px;
+  color: #9e78cf;
+  justify-content: space-between;
+  background: #15101c;
+  border-radius: 10px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.todoText {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.deeds {
+  display: flex;
+  gap: 20px;
+}
+
+.deeds button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.done {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.todoDoneText {
+  color: #78cfb0;
+  text-decoration: line-through;
+}
